@@ -28,7 +28,7 @@ class UsersController {
 
       return res.status(201).json({
         id: result.insertedId.toString(),
-        email: email,
+        email,
       });
 
     } catch (error) {
